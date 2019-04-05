@@ -11,6 +11,7 @@
     <modules>
         <module>spring-cloud-feign-sample</module>
         <module>eureka-sample</module>
+        <module>spring-cloud-using-skywalking-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
