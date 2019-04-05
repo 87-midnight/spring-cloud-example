@@ -1,0 +1,11 @@
+server:
+  port: 9004
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@server1:9000/eureka/,http://admin:123456@server2:9001/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: my-user-consumer

@@ -1,0 +1,15 @@
+spring:
+  security: # 配置安全验证
+    user:
+      name: admin
+      password: 123456
+  application:
+    name: server1
+eureka:
+  instance:
+    hostname: server1
+  client:
+    service-url:
+      defaultZone: http://admin:123456@server2:9001/eureka/
+server:
+  port: 9000
