@@ -16,5 +16,6 @@
     <modules>
         <module>user-provider</module>
         <module>user-consumer</module>
+        <module>user-provider-1</module>
     </modules>
 </project>
