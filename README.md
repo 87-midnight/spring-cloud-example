@@ -46,3 +46,4 @@ Archaius 1替换为Spring Boot external config + Spring Cloud Config
 #### 模块功能描述
 - eureka集群实现
 - feign 集成
+- config 配置中心集成

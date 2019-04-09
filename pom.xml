@@ -13,6 +13,7 @@
         <module>eureka-sample</module>
         <module>spring-cloud-using-skywalking-sample</module>
         <module>spring-cloud-feign-hystrix-sample</module>
+        <module>spring-cloud-config-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

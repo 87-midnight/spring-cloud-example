@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhaoyibo/spring-cloud-study # 配置git仓库的地址
+          search-paths: config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: test
+          password: test
+server:
+  port: 9007
