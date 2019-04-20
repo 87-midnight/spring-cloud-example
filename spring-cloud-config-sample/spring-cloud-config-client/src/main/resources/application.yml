@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: config-client
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: guest
+    password: guest

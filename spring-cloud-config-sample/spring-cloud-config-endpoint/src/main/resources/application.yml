@@ -9,5 +9,15 @@ spring:
           search-paths: /spring-cloud-config-sample/spring-cloud-config-properties/ # git仓库地址下的相对地址，可以配置多个，用,分割。
 #          username: test
 #          password: test
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    username: guest
+    password: guest
 server:
   port: 9007
+management:
+  endpoints:
+    web:
+      exposure:
+        include: [health,info,refresh,bus-refresh]
