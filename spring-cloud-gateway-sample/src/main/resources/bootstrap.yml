@@ -1,0 +1,5 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: api-gateway

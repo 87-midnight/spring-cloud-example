@@ -14,6 +14,10 @@
         <module>spring-cloud-using-skywalking-sample</module>
         <module>spring-cloud-feign-hystrix-sample</module>
         <module>spring-cloud-config-sample</module>
+        <module>spring-cloud-gateway-sample</module>
+        <module>spring-cloud-stream-sample</module>
+        <module>spring-cloud-oauth2-sample</module>
+        <module>asynchronization-container-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
