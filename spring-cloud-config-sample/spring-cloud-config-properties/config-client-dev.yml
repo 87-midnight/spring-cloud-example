@@ -1,0 +1,4 @@
+client:
+  user:
+    username: configClient
+    password: clientConfig
