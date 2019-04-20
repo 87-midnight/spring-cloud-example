@@ -5,3 +5,10 @@
 - config server 则会自动拉取gitlab仓库最新配置文件，通过bus消息总线更新到每个config client。
 - 使用webflux接口进行前后请求对比即可看到动态刷新应用环境上下文属性的变化
 - bus.event.RefreshListener 打印出变更后的属性值
+
+#### 2019-04-20 更新
+- 由于config配置中心使用了bus rabbitmq机制刷新应用上下文环境属性。
+- 在这里简单集成rabbitmq消息队列的使用
+- config-endpoint 作为消息消费者
+- config-client 作为消息生产者
+- 后续再使用Spring Cloud Stream替换
