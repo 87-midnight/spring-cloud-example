@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>asynchronization-container-sample</artifactId>
-
-
+    <dependencies>
+        <dependency>
+            <!--spring retry重试机制-->
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+            <version>1.2.4.RELEASE</version>
+        </dependency>
+    </dependencies>
 </project>

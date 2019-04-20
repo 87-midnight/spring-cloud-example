@@ -1,4 +1,5 @@
 ### spring cloud sample
+- 添加版本说明是为了未来的学习方向，有取有舍
 #### spring cloud Greenwich 版本变更说明
 所有项目都进行了更新，以实现Java 11的兼容性。
 
@@ -45,5 +46,11 @@ Archaius 1替换为Spring Boot external config + Spring Cloud Config
 
 #### 模块功能描述
 - eureka集群实现
+- consul集群使用
 - feign 集成
 - config 配置中心集成
+- stream消息驱动
+- oauth2实现
+- 异步操作的所有组件集成
+- api-gateway使用
+- hystrix集成
