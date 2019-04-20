@@ -12,3 +12,6 @@
 - config-endpoint 作为消息消费者
 - config-client 作为消息生产者
 - 后续再使用Spring Cloud Stream替换
+
+#### 2019-04-21 更新
+- 扩展基于RemoteApplicationEvent的事件监听
