@@ -2,3 +2,5 @@ client:
   user:
     username: configClient
     password: clientConfig
+    gender: female
+    address: unknown place
