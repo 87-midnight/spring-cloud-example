@@ -18,6 +18,7 @@
         <module>spring-cloud-stream-sample</module>
         <module>spring-cloud-oauth2-sample</module>
         <module>asynchronization-container-sample</module>
+        <module>spring-cloud-consul-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
