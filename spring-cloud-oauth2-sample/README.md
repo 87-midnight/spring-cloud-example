@@ -1,2 +1,3 @@
 #### 权限模块
-- link：https://blog.csdn.net/peterwanghao/article/details/81135925
+- 使用hibernate mysql 存储用户数据
+- 使用redis保存token
