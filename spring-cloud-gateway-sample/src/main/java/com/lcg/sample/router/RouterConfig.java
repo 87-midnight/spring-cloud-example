@@ -12,8 +12,10 @@ public class RouterConfig {
     public RouteLocator define(RouteLocatorBuilder builder){
         return builder.routes()
                 .route(r -> r.path("/test/**").and().query("id")
-                        .filters(f->f.stripPrefix(1)).uri("http://localhost:9002")
+                        .filters(f->f.stripPrefix(1)).uri("http://localhost:9002") // 访问时，输入http://localhost:9009/test/get?id=XXX即可
                 )
+                .route(r -> r.path("/self").filters(f->f.stripPrefix(1)).uri("http://www.sogou.com"))
                 .build();
     }
+
 }
