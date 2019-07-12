@@ -1,0 +1,30 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        outboundOrg: #默认为output，可自定义
+          destination: test-topic
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: localhost
+  profiles:
+    active: producer
+kafka:
+  component:
+    id: producer
+---
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost
+      bindings:
+        inboundOrgChanges:   #默认为input
+          destination: test-topic
+          content-type: application/json
+          group: lcg #消费者组保证消息只被一组服务实例处理一次
+  profiles:
+    active: consumer
+---
