@@ -11,6 +11,12 @@
 
     <artifactId>spring-cloud-alibaba-sample</artifactId>
 
+    <modules>
+        <module>distributed-service1</module>
+        <module>distributed-service2</module>
+        <module>distributed-service3</module>
+        <module>distributed-service4</module>
+    </modules>
     <dependencyManagement>
         <dependencies>
             <dependency>
