@@ -19,6 +19,7 @@
         <module>spring-cloud-oauth2-sample</module>
         <module>asynchronization-container-sample</module>
         <module>spring-cloud-consul-sample</module>
+        <module>spring-cloud-alibaba-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
