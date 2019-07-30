@@ -1,2 +1,14 @@
 server:
-  port: 9011
+  port: 9012
+spring:
+  application:
+    name: service1-provider
+  cloud:
+    alicloud:
+      oss:
+        endpoint: xxx
+      access-key: xxx
+      secret-key: xxx
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
