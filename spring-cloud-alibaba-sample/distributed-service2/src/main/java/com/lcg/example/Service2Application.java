@@ -38,7 +38,7 @@ public class Service2Application {
     }
 
 
-    @FeignClient(name = "service-provider", fallback = EchoServiceFallback.class, configuration = FeignConfiguration.class)
+    @FeignClient(name = "service1-provider", fallback = EchoServiceFallback.class, configuration = FeignConfiguration.class)
     public interface EchoService {
         @RequestMapping(value = "/echo/{str}", method = RequestMethod.GET)
         String echo(@PathVariable("str") String str);
