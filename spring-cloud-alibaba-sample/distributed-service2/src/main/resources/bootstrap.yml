@@ -8,15 +8,12 @@ spring:
       discovery:
         server-addr: 127.0.0.1:8848
     sentinel:
-      eager: true
+      transport:
+        dashboard: 127.0.0.1:8080
       datasource:
-        ds1:
-          file:
-            file: classpath: flowrule.json
-            data-type: json
-            rule-type: flow
-        ds2:
-          file:
-            file: classpath:degraderule.json
-            data-type: json
-            rule-type: flow
+        ds:
+          nacos:
+            server-addr: 127.0.0.1:8848
+            groupId: DEFAULT_GROUP
+            dataId: ${spring.application.name}-sentinel
+            ruleType: flow

@@ -20,4 +20,8 @@
 
 ### spring-cloud-alibaba模块说明
 - distributed-service1~2 基于nacos集成所有的组件(不包含dubbo)
+  - sentinel哨兵模式，类似于hystrix组件
+  - oss组件
+  - sentinel spring cloud gateway结合
+  - sentinel组件独立部署，作为springboot应用启动，下载链接看sentinel github release版本
 - distributed-service3~4 nacos-dubbo使用
