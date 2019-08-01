@@ -32,7 +32,7 @@ public class Service1Application implements ApplicationRunner{
     @Override
     public void run(ApplicationArguments args) throws Exception {
         nacosConfigProperties.configServiceInstance().addListener(
-            "common", "REFRESH_GROUP", new Listener() {
+            "common", "DEFAULT_GROUP", new Listener() {
 
                 /**
                  * Callback with latest config data.

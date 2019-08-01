@@ -14,5 +14,4 @@ spring:
         server-addr: 127.0.0.1:8848
       config:
         server-addr: 127.0.0.1:8848
-        prefix: common
-        group: REFRESH_GROUP
+        prefix: common # 对应配置中心填写的data-id为common.properties。如果yml里配置了profile，则common-${profile}.properties

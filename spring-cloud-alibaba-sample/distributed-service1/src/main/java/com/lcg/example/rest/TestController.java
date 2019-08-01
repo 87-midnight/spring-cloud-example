@@ -17,10 +17,11 @@ import java.util.UUID;
 @RestController
 public class TestController {
 
-    @Autowired
-    private Environment environment;
+    @Value("${my.user.username:xxxx}")
+    private String username;
+
     @GetMapping(value = "/test")
     public Object getMsg(){
-        return environment.getProperty("my.user.username")+UUID.randomUUID().toString();
+        return username+"/"+UUID.randomUUID().toString();
     }
 }
