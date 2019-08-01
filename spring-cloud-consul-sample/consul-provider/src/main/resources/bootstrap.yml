@@ -3,9 +3,18 @@ server:
 spring:
   application:
     name: consul-provider
+  profiles:
+    active: dev
   cloud:
       consul:
         host: 127.0.0.1
         port: 8500
         discovery:
           register: true
+        config:
+          defaultContext: ${spring.application.name}
+          enabled: true
+          data-key: common
+          prefix: config
+          format: yaml
+          profile-separator: '.' #对应consul界面填写的目录是config/consul-provider.dev/common

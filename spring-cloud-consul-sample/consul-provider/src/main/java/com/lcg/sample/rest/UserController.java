@@ -1,6 +1,9 @@
 package com.lcg.sample.rest;
 
+import com.alibaba.fastjson.JSON;
+import com.lcg.sample.config.UserProperties;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,6 +21,8 @@ import java.util.Map;
 @Slf4j
 public class UserController {
 
+    @Autowired
+    private UserProperties properties;
 
     @GetMapping(value = "/get")
     public Object getUserInfo(@RequestParam String id){
@@ -26,5 +31,10 @@ public class UserController {
         user.put("name","provider");
         log.info("i'm doing job");
         return user;
+    }
+
+    @GetMapping(value = "/test")
+    public Object refreshProperties(){
+        return JSON.toJSONString(properties);
     }
 }
