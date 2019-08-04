@@ -1,6 +1,6 @@
 package com.lcg.example.data;
 
-import com.alibaba.fescar.core.context.RootContext;
+import io.seata.core.context.RootContext;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

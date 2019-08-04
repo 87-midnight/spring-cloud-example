@@ -1,7 +1,7 @@
 package com.lcg.example.data;
 
-import com.alibaba.fescar.core.context.RootContext;
-import com.alibaba.fescar.spring.annotation.GlobalTransactional;
+import io.seata.core.context.RootContext;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,8 +17,8 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderMapper orderDao;
 
-    private final String STORAGE_SERVICE_HOST = "http://storage-service/storage";
-    private final String PAY_SERVICE_HOST = "http://pay-service/pay";
+    private final String STORAGE_SERVICE_HOST = "http://service2-consumer/storage";
+    private final String PAY_SERVICE_HOST = "http://service2-consumer/pay";
 
     @GlobalTransactional
     @Override

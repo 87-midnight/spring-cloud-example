@@ -1,12 +1,12 @@
 package com.lcg.example;
 
+import com.alibaba.cloud.nacos.NacosConfigProperties;
 import com.alibaba.nacos.api.config.listener.Listener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.alibaba.nacos.NacosConfigProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 import java.io.IOException;
