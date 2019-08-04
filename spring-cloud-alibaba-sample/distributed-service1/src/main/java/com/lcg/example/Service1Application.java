@@ -2,12 +2,14 @@ package com.lcg.example;
 
 import com.alibaba.cloud.nacos.NacosConfigProperties;
 import com.alibaba.nacos.api.config.listener.Listener;
+import com.lcg.example.mq.MySource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.stream.annotation.EnableBinding;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -20,6 +22,7 @@ import java.util.concurrent.Executor;
  **/
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableBinding({ MySource.class })
 public class Service1Application implements ApplicationRunner{
 
     @Autowired

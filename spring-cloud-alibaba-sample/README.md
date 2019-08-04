@@ -109,3 +109,8 @@ spring.cloud.alibaba.seata.tx-service-group=service2-consumer-fescar-group
 - 启动nacos server
 - 在bash窗口执行seatas-server/conf下的sh命令：./nacos-config.sh localhost
 - 启动 seatas-server
+
+### rocketmq binder使用
+- 启动mqnamesrv
+- 启动 broker /mqbroker -n localhost:9876
+- 创建topic：./mqadmin updateTopic -n localhost:9876 -c DefaultCluster -t test-topic
