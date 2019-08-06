@@ -16,6 +16,7 @@
         <module>distributed-service3</module>
         <module>distributed-service4</module>
         <module>distributed-service5</module>
+        <module>spring-cloud-dubbo-common</module>
     </modules>
     <dependencyManagement>
         <dependencies>
