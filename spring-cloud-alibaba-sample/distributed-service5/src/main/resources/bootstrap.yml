@@ -29,7 +29,7 @@ spring.cloud:
         nacos:
           server-addr: 127.0.0.1:8848
           groupId: DEFAULT_GROUP
-          dataId: ${spring.application.name}-sentinel
+          dataId: ${spring.application.name}-webflux
           ruleType: flow
       ds2:
         nacos:

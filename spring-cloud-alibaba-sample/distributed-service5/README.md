@@ -48,7 +48,7 @@ sentinel:
       filter:
         enabled: true
 ```
-- 在nacos服务界面添加配置文件service2-consumer-sentinel-gateway，内容如下
+- 在nacos服务界面添加配置文件service5-gateway-webflux-sentinel-unite-sentinel-gateway，内容如下
 ```json
 [
   {
@@ -73,7 +73,7 @@ sentinel:
   }
 ]
 ```
-- 继续添加配置文件service2-consumer-sentinel-api
+- 继续添加配置文件service5-gateway-webflux-sentinel-unite-sentinel-api
 ```json
 [
   {
@@ -109,4 +109,28 @@ sentinel:
 ]
 ```
 ### sentinel-webflux集成配置
-基本和web的集成差不多
+- 基本和web的集成差不多
+- 定义配置文件
+
+- 在nacos服务界面添加名为service5-gateway-webflux-sentinel-unite-webflux的配置文件,内容如下
+```json
+[
+  {
+    "resource": "/mono",
+    "controlBehavior": 0,
+    "count": 0,
+    "grade": 1,
+    "limitApp": "default",
+    "strategy": 0
+  },
+  {
+    "resource": "/flux",
+    "controlBehavior": 0,
+    "count": 0,
+    "grade": 1,
+    "limitApp": "default",
+    "strategy": 0
+  }
+]
+```
+- 访问http://localhost:9014/httpbin?name=3可以得到sentinel限流错误信息
