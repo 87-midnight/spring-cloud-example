@@ -4,23 +4,6 @@ spring:
   application:
     name: service2-consumer
   cloud:
-    gateway:
-      enabled: true
-      discovery:
-        locator:
-          lower-case-service-id: true
-      routes:
-      # Add your routes here.
-      - id: aliyun_route
-        uri: https://www.aliyun.com/
-        predicates:
-        - Path=/product/**
-      - id: httpbin_route
-        uri: https://httpbin.org
-        predicates:
-        - Path=/httpbin/**
-        filters:
-        - RewritePath=/httpbin/(?<segment>.*), /$\{segment}
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
@@ -34,19 +17,5 @@ spring:
             groupId: DEFAULT_GROUP
             dataId: ${spring.application.name}-sentinel
             ruleType: flow
-        ds2:
-          nacos:
-            server-addr: 127.0.0.1:8848
-            groupId: DEFAULT_GROUP
-            dataId: ${spring.application.name}-sentinel-gateway
-            ruleType: gw-flow
-        ds3:
-          nacos:
-            server-addr: 127.0.0.1:8848
-            groupId: DEFAULT_GROUP
-            dataId: ${spring.application.name}-sentinel-api
-            ruleType: gw-api-group
       filter:
         enabled: true
-      scg:
-        order: -100
