@@ -1,0 +1,22 @@
+dubbo:
+  cloud:
+    # The subscribed services in consumer side
+    subscribed-services: ${provider.application.name}
+  scan:
+    base-packages: com.lcg.example
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+    rest:
+      name: rest
+      port: 9090
+      server: netty
+  registry:
+    #   The Spring Cloud Dubbo's registry extension
+    address: spring-cloud://localhost
+#   The traditional Dubbo's registry
+#   address: zookeeper://127.0.0.1:2181
+feign:
+  hystrix:
+    enabled: true
