@@ -57,3 +57,4 @@ Archaius 1替换为Spring Boot external config + Spring Cloud Config
 
 #2019-08-07
 - hello springcloud
+- become a contributor
