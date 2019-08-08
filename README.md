@@ -54,7 +54,4 @@ Archaius 1替换为Spring Boot external config + Spring Cloud Config
 - 异步操作的所有组件集成
 - api-gateway使用
 - hystrix集成
-
-#2019-08-07
-- hello springcloud
-- become a contributor
+- spring-cloud-alibaba全家桶集成
