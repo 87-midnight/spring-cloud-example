@@ -3,23 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring-cloud-sample</artifactId>
+        <artifactId>asynchronization-container-sample</artifactId>
         <groupId>com.lcg</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <artifactId>reactive-webflux-sample</artifactId>
 
-    <modules>
-        <module>reactive-webflux-sample</module>
-    </modules>
-
-    <artifactId>asynchronization-container-sample</artifactId>
     <dependencies>
         <dependency>
-            <!--spring retry重试机制-->
-            <groupId>org.springframework.retry</groupId>
-            <artifactId>spring-retry</artifactId>
-            <version>1.2.4.RELEASE</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
     </dependencies>
 </project>
