@@ -12,6 +12,8 @@
     <modules>
         <module>reactive-webflux-sample</module>
         <module>reactive-redis-sample</module>
+        <module>reactive-elastic-sample</module>
+        <module>reactive-mongo-sample</module>
     </modules>
 
     <artifactId>asynchronization-container-sample</artifactId>
