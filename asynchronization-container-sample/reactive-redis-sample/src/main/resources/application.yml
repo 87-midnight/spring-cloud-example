@@ -1,0 +1,8 @@
+server:
+  port: 9018
+spring:
+  redis:
+    timeout: 5000ms
+#    lettuce:
+#      pool:
+#        max-wait: 1000ms
