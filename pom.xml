@@ -20,6 +20,7 @@
         <module>asynchronization-container-sample</module>
         <module>spring-cloud-consul-sample</module>
         <module>spring-cloud-alibaba-sample</module>
+        <module>spring-cloud-resilience4j-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

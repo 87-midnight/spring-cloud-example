@@ -45,13 +45,15 @@ Zuul 1替换为Spring Cloud Gateway
 Archaius 1替换为Spring Boot external config + Spring Cloud Config
 
 #### 模块功能描述
+
+- reactive webflux programming 响应式编程 
 - eureka集群实现
 - consul集群使用
 - feign 集成
 - config 配置中心集成
 - stream消息驱动
 - oauth2实现
-- 异步操作的所有组件集成
 - api-gateway使用
 - hystrix集成
+- resilience4j 集成
 - spring-cloud-alibaba全家桶集成
