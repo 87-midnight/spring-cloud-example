@@ -1,0 +1,41 @@
+server:
+  port: 9023
+spring:
+  profiles: producer
+  application:
+    name: rabbit-producer
+  cloud:
+    stream:
+      rabbit:
+        binder:
+          admin-addresses: 127.0.0.1:5672
+      bindings:
+        output-rabbit:
+          destination: rabbit-topic-test
+          content-type: application/json
+          group: producer-test
+rabbit:
+  producer:
+    enable: true
+
+---
+server:
+  port: 9024
+spring:
+  profiles: consumer
+  application:
+    name: rabbit-consumer
+  cloud:
+    stream:
+      rabbit:
+        binder:
+          admin-addresses: 127.0.0.1:5672
+      bindings:
+        input-rabbit:
+          destination: rabbit-topic-test
+          content-type: application/json
+          group: consumer-test
+rabbit:
+  consumer:
+    enable: true
+---

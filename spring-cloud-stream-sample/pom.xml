@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>kafka-stream</module>
+        <module>rabbitmq-stream</module>
     </modules>
 
     <dependencies>

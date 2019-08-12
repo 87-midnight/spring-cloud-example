@@ -5,4 +5,5 @@
 
 ### 模块说明
 
-- kafka-stream 集成kafka stream示例
+- kafka-stream 集成kafka示例
+- rabbitmq-stream 集成rabbitmq示例
