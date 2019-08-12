@@ -1,4 +1,5 @@
 ## reactive webflux
+***注意！该模块已迁移到[spring-boot-example](https://github.com/87-midnight/spring-boot-example)进行后续更新***
 ## Spring WebFlux
 
 The original web framework included in the Spring Framework, Spring Web MVC, was purpose-built for the Servlet API and Servlet containers. The reactive-stack web framework, Spring WebFlux, was added later in version 5.0. It is fully non-blocking, supports Reactive Streams back pressure, and runs on such servers as Netty, Undertow, and Servlet 3.1+ containers.
@@ -21,3 +22,5 @@ Both web frameworks mirror the names of their source modules (spring-webmvc and 
 - reactive-webflux-sample
 
   基础web容器服务，包含接口定义，调用，响应。接口拦截，权限验证等
+  
+  
