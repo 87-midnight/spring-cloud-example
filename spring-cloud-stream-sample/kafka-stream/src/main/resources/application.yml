@@ -27,4 +27,6 @@ spring:
           group: lcg #消费者组保证消息只被一组服务实例处理一次
   profiles:
     active: consumer
----
+kafka:
+  component:
+    id: consumer
