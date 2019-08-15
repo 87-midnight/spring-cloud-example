@@ -11,5 +11,12 @@
 
     <artifactId>spring-cloud-auth-common</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
 </project>
