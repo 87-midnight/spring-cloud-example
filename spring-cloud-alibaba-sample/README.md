@@ -24,4 +24,5 @@
   - oss组件
   - sentinel spring cloud gateway结合
   - sentinel组件独立部署，作为springboot应用启动，下载链接看sentinel github release版本
+  - rocketmq stream
 - distributed-service3~4 nacos-dubbo使用

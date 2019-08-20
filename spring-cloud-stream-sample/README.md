@@ -7,3 +7,5 @@
 
 - kafka-stream 集成kafka示例
 - rabbitmq-stream 集成rabbitmq示例
+
+***spring cloud stream rocketmq示例***请看[spring cloud alibaba demo](../spring-cloud-alibaba-sample/README.md)
