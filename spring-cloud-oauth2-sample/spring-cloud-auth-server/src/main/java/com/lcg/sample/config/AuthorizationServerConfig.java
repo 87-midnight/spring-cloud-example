@@ -1,5 +1,6 @@
 package com.lcg.sample.config;
 
+import com.lcg.sample.service.SysUserService;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
@@ -38,7 +39,7 @@ import java.util.concurrent.TimeUnit;
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
     private final DataSource dataSource;
-    private final UserDetailsService userDetailsService;
+    private final SysUserService userDetailsService;
     private final AuthenticationManager authenticationManager;
     private final RedisConnectionFactory redisConnectionFactory;
     private final ClientDetailsService clientDetailsService;

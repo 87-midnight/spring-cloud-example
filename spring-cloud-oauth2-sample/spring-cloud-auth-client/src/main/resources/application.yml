@@ -18,15 +18,19 @@ spring:
       hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
   application:
     name: user-auth-client
+  security:
+    filter:
+      order: 3
 server:
   port: 9011
 security:
   oauth2:
     resource:
-      user-info-uri: http://localhost:9010/users/current
+      user-info-uri: http://localhost:9010/users/get
     client:
       id: client_2
       client-secret: 123456
       access-token-uri: http://localhost:9010/oauth/token
+      user-authorization-uri: http://localhost:9010/oauth/authorize
       grant-type: client_credentials,password
       scope: server

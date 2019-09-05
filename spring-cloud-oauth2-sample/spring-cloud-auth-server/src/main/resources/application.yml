@@ -20,3 +20,4 @@ eureka:
       defaultZone:  http://admin:123456@server1:9000/eureka/,http://admin:123456@server2:9001/eureka/
   instance:
     prefer-ip-address: true
+logging.level.org.springframework.security: DEBUG
