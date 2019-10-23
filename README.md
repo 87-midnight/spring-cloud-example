@@ -57,3 +57,5 @@ Archaius 1替换为Spring Boot external config + Spring Cloud Config
 - hystrix集成
 - resilience4j 集成
 - spring-cloud-alibaba全家桶集成
+
+#### 测试
