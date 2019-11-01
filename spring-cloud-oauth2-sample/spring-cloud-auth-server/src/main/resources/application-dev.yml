@@ -1,0 +1,15 @@
+server:
+  port: 9010
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://139.199.59.17:5432/midnight_dev
+    username: aa
+    password: aa
+  jpa:
+    database: POSTGRESQL #使用这个设置代替hibernate.dialect: org.hibernate.dialect.MySQL5Dialect指定方言
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true

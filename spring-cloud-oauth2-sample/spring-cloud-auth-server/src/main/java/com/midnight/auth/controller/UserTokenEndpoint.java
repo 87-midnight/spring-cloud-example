@@ -1,4 +1,4 @@
-package com.lcg.sample.endpoint;
+package com.midnight.auth.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

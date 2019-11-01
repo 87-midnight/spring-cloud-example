@@ -2,18 +2,23 @@ server:
   port: 9010
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=GMT%2b8
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://139.199.59.17:5432/midnight_dev
     username: root
     password: 123456
   jpa:
+    database: POSTGRESQL #使用这个设置代替hibernate.dialect: org.hibernate.dialect.MySQL5Dialect指定方言
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
-      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
   application:
     name: auth-server
+
 eureka:
   client:
     service-url:
@@ -21,3 +26,7 @@ eureka:
   instance:
     prefer-ip-address: true
 logging.level.org.springframework.security: DEBUG
+
+service:
+  config:
+    jwtSigningKey: "VSvFWBb4ozS2vRL0"
