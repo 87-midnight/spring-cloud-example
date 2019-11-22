@@ -18,7 +18,7 @@ public class PlatformUserDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        PlatformUser platformUser = platformUserRepository.loadUserByUsername(s);
+        PlatformUser platformUser = platformUserRepository.findEnableByUsername(s);
         if(platformUser == null){
             throw new UsernameNotFoundException("Could not find " + s);
         }

@@ -1,0 +1,4 @@
+com\lcg\sample\config\ResourceServerConfiguration.class
+com\lcg\sample\rest\UserController.class
+com\lcg\sample\AuthClientApplication.class
+com\lcg\sample\config\OAuth2ClientConfig.class

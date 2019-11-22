@@ -1,0 +1,4 @@
+com\lcg\sample\repository\UserRepository.class
+com\lcg\sample\model\SysUser.class
+com\lcg\sample\model\Role.class
+com\lcg\sample\service\SysUserService.class

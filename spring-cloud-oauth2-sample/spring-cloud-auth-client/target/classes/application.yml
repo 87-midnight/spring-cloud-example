@@ -1,0 +1,36 @@
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://admin:123456@server1:9000/eureka/,http://admin:123456@server2:9001/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+  application:
+    name: user-auth-client
+  security:
+    filter:
+      order: 3
+server:
+  port: 9011
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:9010/users/get
+    client:
+      id: client_2
+      client-secret: 123456
+      access-token-uri: http://localhost:9010/oauth/token
+      user-authorization-uri: http://localhost:9010/oauth/authorize
+      grant-type: client_credentials,password
+      scope: server
